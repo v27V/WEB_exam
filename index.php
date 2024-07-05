@@ -22,7 +22,9 @@
                         } else {
                             // подключение к БД
                             $link = mysqli_connect('127.0.0.1', 'root', 'kali', 'db_first');
-                            <h2> Приветствую тебя, $_COOKIE['User']!!!! </h2>
+                             <h2 class="hello">
+                                Привет, <?php echo $_COOKIE['User']; ?>
+                             </h2>
                         }
                     ?>
                 </div>
